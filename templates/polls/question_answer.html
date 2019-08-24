@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neural Question and Answer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container columns">
+      <span class=column>
+        <h1 class="title">
+          Question and answer!
+        </h1>
+        <p class="subtitle">
+          Lets <strong>Answer some dope questions</strong>!
+        </p>
+      </span>
+      <span align="center" class="column">
+        <a href="https://github.com/dbpedia/neural-qa/tree/working-gsoc-anand"><img
+          src="data:image/png;base64,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">
+        </a>
+        </span>
+    </div>
+    <div class="box field">
+      <label class="label">Please enter your question here!</label>
+      <div class="control">
+        <form>
+          <input name="query" class="input" type="text" placeholder="Text input">
+        </form>
+
+      </div>
+
+      <div align="center">
+        <button style="margin:1em"class=" is-info container button">
+          Submit
+        </button>
+      </div>
+      <p class="help">
+        What is the order (taxonomy) of species of carabus exiguus absconditus ?
+        What is the order (taxonomy) of species of verticordia plumosa var. grandiflora ?
+        What is the order (taxonomy) of species of pseudoharpax virescens virescens ?
+        What is the order (taxonomy) of species of weeping beech ?
+        What is the order (taxonomy) of species of pequin pepper ?
+        What is the binomial of urmenetea ?
+        What is the binomial of pseudostifftia ?
+        What is the binomial of polyanthina ?
+        What is the binomial of hecastocleis ?
+        What is the binomial of micrandropsis ?
+        What is the binomial of plagiobasis?
+        What is the family of ficus superba ?
+        What is the family of ocypode ceratophthalma ?
+        What is the family of european perch ?
+        What is the family of proailurus ?
+        What is the family of tetraspora ?
+        What is the family of senecio integerrimus ?
+        What is the family of sibara filifolia ?
+        What is the family of aristolochia macrophylla ?
+        What is the family of hyles wilsoni ?
+      </p>
+      <div align="center">
+        <img style="display:none" id="loader" src="https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif">
+        <p id="tags">
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <div align="center">
+    <iframe style="display:none ; height:700px" width="100%" src=""></iframe>
+  </div>
+
+  <script>
+    console.log("http://0.0.0.0:8000/qaserver/portal/" + $('form').serialize() + "?&lang=en")
+    $("button").click(function () {
+      $('iframe').css('display', 'none')
+      $("#loader").css('display','block')
+      $("#tags").empty()
+      $.get("http://0.0.0.0:8000/qaserver/portal/" + $('form').serialize() + "?&lang=en", function (data, status) {
+        console.log("Data: " + (data) + "\nStatus: " + status);
+        datlist = data.split(";")
+        for (dat in datlist) { 
+        $("#tags").append('<a onclick=change(\"'+datlist[dat]+'\") class="tag" >' + datlist[dat] + "</a>") 
+        }
+        $("#loader").css('display','none')
+        $('iframe').css('display', 'block')
+        $('iframe').attr('src',  datlist[0])
+
+      });
+    });
+
+    function change(url){
+      $('iframe').attr('src',  url);
+      //alert(url)
+    }
+  </script>
+
+</body>
+
+</html>
